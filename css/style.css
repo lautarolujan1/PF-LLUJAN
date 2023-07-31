@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navegador  { 
+    display: flex;   
+    justify-content: space-between; 
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    align-items: center;
+    padding: 2px;
+}
+.lista1 ul li a:hover{
+    color: grey;
+}
+.logo img{
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
+.lista1 {display: flex;
+    }
+.navegador ul {
+        display: flex;
+        list-style: none;
+    }
+.navegador ul li a  {
+     text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+     }
+
+.titulo{
+    text-align: center;
+    background-size: cover;
+     background-size: 100% 100%;
+     background-position: center;
+     object-fit: cover; 
+     font-size: 50px;
+   
+}
+.titulo-contacto{
+    height: 900px;
+    text-align: center;
+    background-size: cover;
+     background-image: url(../paginas/multimedia/img/call\ center.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     object-fit: cover;
+}
+.contacto-orden{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "mapa  info"
+    "mapa sesion"
+    "mapa  sesion";
+    margin: 0;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+@media(max-width:1100px){
+    .contacto-orden{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:  1fr;
+        grid-template-areas: 
+        "info"
+        "sesion"
+        "mapa";
+        margin: 0;
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-items: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+.mapa{
+    grid-area: mapa;
+}
+.inicio-sesion{
+    font-size: large;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-area: sesion;   
+}
+.info{
+    border: 2px solid black;
+    width: 350px;
+    height: 100px;
+    border-radius: 5px;
+    grid-area: info;
+}
+
+.titulo-nosotros{
+    height: 900px;
+    clip: auto;
+    text-align: center;
+    background-size: cover;
+     background-image: url(../paginas/multimedia/img/fabrica.jpg);
+     background-size: 100% 100%;
+     background-position: center;
+     object-fit: cover;
+     
+}
+.nosotros-orden{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.titulo-tienda{
+    height: 900px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-image:url(../paginas/multimedia/img/mueblescompras.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    object-fit: cover;
+    background-attachment: local;
+}
+.orden-tienda{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.descripcion{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.imagen-contacto{
+    width: 100%;
+    height: 600px;
+}
+
+.link{
+    font-size: 60px;
+    text-align: center;
+    background: rgb(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: black;
+}
+.producto{
+    width: 250px;
+    border: 2px solid black;
+    margin: 1%;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.producto-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+button{
+    background-color: bisque;
+    color: black;
+    border: none;
+    border-radius: 1px;
+    margin: 5px;
+    padding: 5px 20px;
+}
+footer {
+    display: flex;
+    align-items: flex-start;
+    background-color: bisque;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+footer h3{
+    margin: 10px;
+    padding: 10px;
+}
+.pie-pagina{
+    margin: 10px;
+    flex-direction: column;
+    padding: 10px;
+}
+.pie-pagina h5{
+    padding: 3px;
+}
+
+.pie-parrafo {
+margin: 10px;
+padding: 10px;
+justify-content: center;
+}
+
+
+.acomodar-caja{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.correo{
+    margin: 15px;
+}
+
+.la-empresa{
+    width: 600px;
+    border: 4px solid rgb(140, 128, 114);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    background-color: bisque;
+}
+.video-fabrica{
+    width: 600px;
+    margin: 30px;
+    border-radius: 10px;
+
+}
+
+.carousel-item img{
+ width: 100%;
+ object-fit: cover;
+ height: 600px;
+}
