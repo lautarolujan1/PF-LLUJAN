@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    align-items: flex-start;
+    background-color: $color-fondo;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    h3{
+        margin: 10px;
+        padding: 10px;
+    }
+}
+.pie-pagina{
+    margin: 10px;
+    flex-direction: column;
+    padding: 10px;
+    h5{
+        padding: 3px;
+    }
+}
+
+.pie-parrafo {
+margin: 10px;
+padding: 10px;
+justify-content: center;
+}

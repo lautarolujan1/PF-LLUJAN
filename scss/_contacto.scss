@@ -1,0 +1,17 @@
+.mapa{
+    grid-area: mapa;
+}
+.inicio-sesion{
+    font-size: large;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-area: sesion;   
+}
+.info{
+    border: 2px solid black;
+    width: 350px;
+    height: 100px;
+    border-radius: 5px;
+    grid-area: info;
+}

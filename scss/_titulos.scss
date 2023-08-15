@@ -1,0 +1,84 @@
+.titulo-nosotros{
+    @extend %sizes;
+    clip: auto;
+    background-size: cover;
+     background-image: url(../paginas/multimedia/img/fabrica.jpg);
+     background-size: 100% 100%;
+
+     
+}
+.nosotros-orden{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.titulo-tienda{
+    @extend %sizes;
+    background-repeat: no-repeat;
+    background-image:url(../paginas/multimedia/img/mueblescompras.jpg);
+    background-size: 100% 100%;
+    background-attachment: local;
+}
+.orden-tienda{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.titulo{
+    text-align: center;
+    background-size: cover;
+     background-size: 100% 100%;
+     background-position: center;
+     object-fit: cover; 
+     font-size: 50px;
+}
+.titulo-contacto{
+    @extend %sizes;
+    background-size: cover;
+     background-image: url(../paginas/multimedia/img/call\ center.jpg);
+     background-size: 100% 100%;
+    
+}
+.contacto-orden{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "mapa  info"
+    "mapa sesion"
+    "mapa  sesion";
+    margin: 0;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    @media(max-width:1100px){
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows:  1fr;
+            grid-template-areas: 
+            "info"
+            "sesion"
+            "mapa";
+            margin: 0;
+            column-gap: 5px;
+            row-gap: 5px;
+            justify-items: center;
+            align-items: center;
+            padding: 10px;     
+    }
+}
+.link{
+    font-size: 60px;
+    text-align: center;
+    background: rgb(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: black;
+}
+.carousel-item img{
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+   }
