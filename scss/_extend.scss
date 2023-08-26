@@ -1,7 +1,13 @@
 %sizes{
-    height: 900px;
+    height: 600px;
     text-align: center;
     background-position: center;
     object-fit: cover;
-    position: relative;
+    background-size: cover;
+    @media(max-width: 768px){
+        height: 400px;
+    }
+    @media(max-width: 326px){
+        height: 200px;
+    }
 }

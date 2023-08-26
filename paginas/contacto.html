@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
     <link href="/css/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="./multimedia/img/minimalist-furniture-logo-template-with-illustration_23-2148619518.webp">
 </head>
 <body>
     <header>
@@ -14,7 +16,7 @@
             <div class="logo">
                 <img src="../paginas/multimedia/img/minimalist-furniture-logo-template-with-illustration_23-2148619518.webp" alt="logo">
             </div>
-            <div class="lista1">
+            <i class="fa-solid fa-bars"></i>
             <ul>
                 <li><a href="../index.html">INICIO</a></li>
                  <li><a href="contacto.html">CONTACTO</a></li>
@@ -22,13 +24,14 @@
                 <li> <a href="tienda.html">TIENDA</a></li>
                 <li><a href="iniciar-sesio.html">INICIAR SESION</a></li>
             </ul>
-        </div>
         </nav>
-        <nav class="titulo-contacto">
-     <h1  class="link" >CONTACTO</h1>
+        
 
     </header>
     <main>  
+        <nav class="titulo-contacto">
+            <h1  class="link" >CONTACTO</h1>
+        </nav>
        <nav class="contacto-orden">
         <nav class="info">
             <!--informacion-->
@@ -45,17 +48,17 @@
                 Av. J. B. Alberdi 7237
                 CABA, Buenos Aires
                 Argentina</p>
-             <iframe class="video-fabrica" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1909.5347017947615!2d-58.514710951517344!3d-34.66068475696561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8f9539143b5%3A0x3e40e641cc420ac1!2sAv.%20Juan%20Bautista%20Alberdi%207237%2C%20C1440ABK%20CABA!5e0!3m2!1ses!2sar!4v1687917533513!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <iframe class="mapa-a" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1909.5347017947615!2d-58.514710951517344!3d-34.66068475696561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc8f9539143b5%3A0x3e40e641cc420ac1!2sAv.%20Juan%20Bautista%20Alberdi%207237%2C%20C1440ABK%20CABA!5e0!3m2!1ses!2sar!4v1687917533513!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </nav> 
         <!--caja contactar-->
         <form class="inicio-sesion">
             <h3>Enviar consulta</h3>
            <br> <label for="nombre">NOMBRE Y APELLIDO</label>
-            <input type="text" name="nombre" placeholder="Ingrese nombre y apellido">
+            <input type="text" name="nombre" >
             <br> <label for="correo">CORREO ELECTRONICO</label>
-            <input type="text" name="correo" placeholder="Ingrese correo electronico">
+            <input type="text" name="correo">
             <br> <label for="telefono">TELEFONO</label>
-            <input type="text" name="telefono" placeholder="Ingrese numero de telefono">
+            <input type="text" name="telefono" >
             <br> <label for="consultar">CONSULTAR</label>
             <textarea name="consultar" id="consultar" cols="30" rows="10" placeholder="Ingrese su consulta"></textarea>
             <br> <button>ENVIAR</button>
@@ -71,10 +74,7 @@
         <h4>Fabricademuebles@gmail.com</h4>
         </div class="pie-parrafo"> 
        <p>  Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a 
-            la verificación de stock. Los precios online y los planes de financiación para los productos
-            presentados/publicados en www.fabricademuebles.com.ar  son válidos exclusivamente para la compra 
-            vía internet en las páginas antes mencionadas. Las especificaciones técnicas y descripciones están sujetas
-            a cambios sin previo aviso.</p>
+            la verificación de stock.</p>
         </div>    
     </footer>
 </body>
