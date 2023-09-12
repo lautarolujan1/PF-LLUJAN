@@ -52,16 +52,11 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <!--link-paginas-->
-        <div class="titulo-tienda">
-            <a class="link" href="./paginas/tienda.html">TIENDA</a>
-        </div>
-        <div class="titulo-nosotros">
-            <a class="link" href="./paginas/nosotros.html">NOSOTROS</a>
-        </div>
-        <div class="titulo-contacto">
-         <a class="link" href="./paginas/contacto.html">CONTACTO</a>
-        </div>
+        <button onclick="agregarProducto()">Agregar Producto</button>
+        <button onclick="calcularTotal()">Calcular Total</button>
+        <div id="productos"></div>
+        <p>Total: $<span id="total">0</span></p>
+    
     </main>
     <!--Inicio pie de pagina-->
     <footer>
@@ -77,5 +72,6 @@
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
+    <script src="./curso.js"></script>
+  </body>
 </html>
