@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">  
     <link rel="icon" href="./paginas/multimedia/img/minimalist-furniture-logo-template-with-illustration_23-2148619518.webp">
-</head>
+    
+  </head>
 <body>    
     <header> 
      <!--navegador-->
@@ -52,12 +53,31 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <button onclick="agregarProducto()">Agregar Producto</button>
-        <button onclick="carrito.calcularTotal()">Calcular Total</button>
-        <div id="productos"></div>
-        <p>Total: $<span id="total">0</span></p>
+          <h5>Carrito de Compras</h5>
+          <div>
+              <label for="nombreProducto">Nombre del producto:</label>
+              <input type="text" id="nombreProducto">
+              <br>
+              <label for="precioProducto">Precio del producto:</label>
+              <input type="text" id="precioProducto">
+              <br>
+              <button id="agregarProducto">Agregar Producto</button>
+          </div>
+          <div id="productos">
+              <!-- Lista de productos se mostrará aquí -->
+          </div>
+          <div>
+              <button id="calcularTotal">Calcular Total</button>
+              <p>Total: $<span id="total">0.00</span></p>
+              <button id="iniciar">Iniciar</button>
+          </div>
+          <div id="error" style="color: red;"></div>
+        </body>
+        </html>
+        
     
     </main>
+    
     <!--Inicio pie de pagina-->
     <footer>
         <h3>FABRICA DE MUEBLES 2001</h3>
@@ -69,9 +89,8 @@
        <p>  Las fotos son a modo ilustrativo. La venta de cualquiera de los productos publicados está sujeta a 
             la verificación de stock.</p>
         </div>   
-
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="./scripts/curso.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
